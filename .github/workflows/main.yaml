@@ -32,5 +32,5 @@ jobs:
     - name: Build and push the image
       run: |
           docker login --username mahalawise --password ${{secrets.ACCESS_TOKEN}} ghcr.io
-          docker build -t ghcr.io/mahalawise/primes-service:latest --file Dockerfile .  
-          docker push ghcr.io/mahalawise/primes-service:latest 
+          docker build -t ghcr.io/mahalawise/ciphers-service:latest --file Dockerfile .  
+          docker push ghcr.io/mahalawise/ciphers-service:latest 
