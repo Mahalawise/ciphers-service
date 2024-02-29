@@ -33,4 +33,4 @@ jobs:
       run: |
           docker login --username mahalawise --password ${{secrets.ACCESS_TOKEN}} ghcr.io
           docker build -t ghcr.io/mahalawise/ciphers-service:latest --file Dockerfile .  
-          docker push ghcr.io/mahalawise/ciphers-service:latest 
+          docker push ghcr.io/mahalawise/ciphers-service:latest
